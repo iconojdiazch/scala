@@ -1,2 +1,2 @@
-# ftts_14_11_2016
+# ftts
 Materiales del curso Fast Track to Scala
