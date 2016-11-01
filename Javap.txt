@@ -1,0 +1,9 @@
+Opciones interesantes de javap (desensamblador estándar de Java):
+-p ver todos los miembros
+-c ver bytecodes desensamblados
+-v ver todo
+
+Por ejemplo, desde una ventana de línea de comandos:
+	javap -p MiClase
+en donde existe un archivo MiClase.class en el mismo directorio 
+desde donde arrancamos javap 
