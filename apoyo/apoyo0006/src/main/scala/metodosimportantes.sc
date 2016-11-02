@@ -1,0 +1,19 @@
+object metodosimportantes {
+  println("Welcome to the Scala worksheet")
+  List(1,2,3) ++ List(4,5,6)
+  Set(1,2,3).toSeq
+  Seq(1,2,3).toSet
+  Seq(1,2,1,3).distinct
+  List(1,2,3).isEmpty
+  List(1,2,3).size
+  List(1,2,3).contains(2)
+  List(1,2,3).head
+  List(1,2,3).tail
+  List(1,2,3).init
+  List(1,2,3).take(2)
+  List(1,2,3).drop(2)
+  List(1,2,3) zip List(4,5,6)
+  val mapa = (1 to 10).toList.groupBy { _ % 2 == 0 }
+  mapa(false)
+  mapa(true)
+}
