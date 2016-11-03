@@ -12,7 +12,8 @@ object metodosimportantes {
   List(1,2,3).init
   List(1,2,3).take(2)
   List(1,2,3).drop(2)
-  List(1,2,3) zip List(4,5,6)
+  val a = List(1,2,3) zip List(4,5,6)
+  a unzip
   val mapa = (1 to 10).toList.groupBy { _ % 2 == 0 }
   mapa(false)
   mapa(true)

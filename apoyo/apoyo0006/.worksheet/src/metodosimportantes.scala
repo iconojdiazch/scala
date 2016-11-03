@@ -11,8 +11,9 @@ object metodosimportantes {;import org.scalaide.worksheet.runtime.library.Worksh
   List(1,2,3).tail;System.out.println("""res8: List[Int] = """ + $show(res$8));$skip(19); val res$9 = 
   List(1,2,3).init;System.out.println("""res9: List[Int] = """ + $show(res$9));$skip(22); val res$10 = 
   List(1,2,3).take(2);System.out.println("""res10: List[Int] = """ + $show(res$10));$skip(22); val res$11 = 
-  List(1,2,3).drop(2);System.out.println("""res11: List[Int] = """ + $show(res$11));$skip(30); val res$12 = 
-  List(1,2,3) zip List(4,5,6);System.out.println("""res12: List[(Int, Int)] = """ + $show(res$12));$skip(53); 
+  List(1,2,3).drop(2);System.out.println("""res11: List[Int] = """ + $show(res$11));$skip(38); 
+  val a = List(1,2,3) zip List(4,5,6);System.out.println("""a  : List[(Int, Int)] = """ + $show(a ));$skip(10); val res$12 = 
+  a unzip;System.out.println("""res12: (List[Int], List[Int]) = """ + $show(res$12));$skip(53); 
   val mapa = (1 to 10).toList.groupBy { _ % 2 == 0 };System.out.println("""mapa  : scala.collection.immutable.Map[Boolean,List[Int]] = """ + $show(mapa ));$skip(14); val res$13 = 
   mapa(false);System.out.println("""res13: List[Int] = """ + $show(res$13));$skip(13); val res$14 = 
   mapa(true);System.out.println("""res14: List[Int] = """ + $show(res$14))}
