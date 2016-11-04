@@ -4,11 +4,7 @@ name := "apoyo0009"
 
 version := "0.1-SNAPSHOT"
 
-scalaVersion := "2.11.8"
-
-libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "2.1.4" % "test"
-)
+scalaVersion := "2.12.0"
 
 scalacOptions ++= List(
   "-unchecked",

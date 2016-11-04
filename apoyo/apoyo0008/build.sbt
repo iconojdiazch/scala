@@ -1,6 +1,6 @@
 organization := "iconotc.com"
 
-name := "apoyo0010"
+name := "apoyo0008"
 
 version := "0.1-SNAPSHOT"
 
