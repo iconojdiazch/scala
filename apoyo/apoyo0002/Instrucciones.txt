@@ -1,0 +1,10 @@
+Abrir una ventana de comandos
+Teclear scalac dagual.scala
+Teclear la orden dir y observar los resultados
+Teclar scala Primero
+Borrar los archivos con extensión class: del *.class
+Teclear scala daigual.scala, dir y observar los resultados
+Teclear scala
+Una vez dentro del intérprete: :load daigual.scala
+Luego: Primero.main(Array()) y observar el resultado
+Teclear :quit para salir del intérprete
