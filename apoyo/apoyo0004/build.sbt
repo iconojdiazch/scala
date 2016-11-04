@@ -1,6 +1,6 @@
 organization := "iconotc.com"
 
-name := "default"
+name := "apoyo0004"
 
 version := "0.1-SNAPSHOT"
 
