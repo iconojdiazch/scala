@@ -1,6 +1,6 @@
-organization := "ejercicio"
+organization := "iconotc.com"
 
-name := "default"
+name := "ejercicio"
 
 version := "0.1-SNAPSHOT"
 
