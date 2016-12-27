@@ -1,2 +1,2 @@
-# ftts
-Materiales del curso Fast Track to Scala
+# Curso de Scala
+Materiales del curso de Scala
