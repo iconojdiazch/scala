@@ -22,6 +22,10 @@ object factorias {
   }
   object Test {
     def apply(n: Int) = new Test(n)
+    def unapply(t: Test): Option[Int] = Some(t.m)
   }
-  Test(7000)
+  Test(7000) match {
+    case Test(numero) => println(numero)
+    case _            => println("Valor Inesperado")
+  }
 }
