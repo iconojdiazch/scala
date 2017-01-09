@@ -17,7 +17,7 @@ object Principal extends App {
     contador.values.sum
   }
 
-  def tiempo(bloque: => Int) = {
+  def tiempo[T](bloque: => T) = {
     val inicio = System.nanoTime
     (System.nanoTime - inicio, bloque)
   }
