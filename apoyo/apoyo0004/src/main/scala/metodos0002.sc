@@ -12,7 +12,7 @@ object metodos {
   metodoSimple
 
   def metodoSimple2() = "Hola"
-  metodoSimple2()
+  metodoSimple2
 
   def conParametros(s: String): String = "dos"
   conParametros("a")
