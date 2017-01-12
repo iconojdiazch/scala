@@ -28,10 +28,10 @@ object buclesfor {
   for {
     i <- 1 to 10
     cuadradoPar = i * i if i % 2 == 0
-  } yield s"El cuadrao de $i es $cuadradoPar"
+  } yield s"El cuadrado de $i es $cuadradoPar"
 
   for (i <- 1 to 10; cuadradoPar = i * i if i % 2 == 0)
-    yield s"El cuadrao de $i es $cuadradoPar"
+    yield s"El cuadrado de $i es $cuadradoPar"
 
   //Traslación
   for (n <- 1 to 5) println(n)
