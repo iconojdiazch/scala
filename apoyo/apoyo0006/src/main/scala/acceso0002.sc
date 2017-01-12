@@ -32,10 +32,12 @@ object acceso {
   ("b", 1)._1                                     //> res13: String = b
   ("b", 1)._2                                     //> res14: Int = 1
   //Un tuple puede también declararse empleando el operador ->
-  1 -> new java.util.Date                         //> res15: (Int, java.util.Date) = (1,Wed Nov 02 12:54:44 CET 2016)
+  1 -> new java.util.Date                         //> res15: (Int, java.util.Date) = (1,Thu Jan 12 12:47:29 CET 2017)
   //Internamente un tuple es una case class parametrizada
-  case class MiTuple2[A, B](_1: A, _2: B)
-  val t = MiTuple2(1, "a")                        //> t  : acceso.MiTuple2[Int,String] = MiTuple2(1,a)
+  case class MiTuple2[A, B](_1: A, _2: B) {
+    override def toString = s"(${this._1},${this._2})"
+  }
+  val t = MiTuple2(1, "a")                        //> t  : acceso.MiTuple2[Int,String] = (1,a)
   t._1                                            //> res16: Int = 1
   t._2                                            //> res17: String = a
 
@@ -57,9 +59,9 @@ object acceso {
   a(0)                                            //> res23: Int = 1
   a(0) = 7
   a                                               //> res24: Array[Int] = Array(7, 2, 3)
-  
+
   //Compartir estructura (structural sharing)
-  val l = List(1,2,3)                             //> l  : List[Int] = List(1, 2, 3)
+  val l = List(1, 2, 3)                           //> l  : List[Int] = List(1, 2, 3)
   val l1 = l.tail                                 //> l1  : List[Int] = List(2, 3)
   l.tail == l1                                    //> res25: Boolean = true
 }
