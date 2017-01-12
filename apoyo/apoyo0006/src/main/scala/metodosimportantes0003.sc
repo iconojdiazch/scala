@@ -12,6 +12,17 @@ object metodosimportantes {
   List(1,2,3).init
   List(1,2,3).take(2)
   List(1,2,3).drop(2)
+  List(2,1,3).sorted
+  List(2,1,3).sortWith(_ < _)
+  List(2,1,3).sortWith(_ > _)
+  case class Persona(nombre:String) extends Ordered[Persona]{
+   def compare (that: Persona) = {
+        if (this.nombre == that.nombre) 0 else if (this.nombre > that.nombre) 1 else -1
+    }
+  }
+  import scala.util.Random
+  val desordenada = Random.shuffle(('a' to 'j').toList.map(_.toString))
+  val ordenada = desordenada.map(Persona(_)).sorted
   val a = List(1,2,3) zip List(4,5,6)
   a unzip
   val mapa = (1 to 10).toList.groupBy { _ % 2 == 0 }
