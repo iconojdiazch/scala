@@ -37,4 +37,7 @@ object traits {
   class C extends A
   class D extends A with B
   class E extends C with B
+  object F extends C
+  object G extends A
+  object H extends A with B
 }

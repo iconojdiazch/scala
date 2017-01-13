@@ -1,5 +1,5 @@
 object herencia1 {
-  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+  println("Welcome to the Scala worksheet")
 
   //Herencia de métodos no privados
   class Ancestro {
@@ -8,15 +8,15 @@ object herencia1 {
   }
   class Descendiente extends Ancestro
 
-  new Ancestro().m                                //> En ancestro
-  new Descendiente().m                            //> En ancestro
+  new Ancestro().m
+  new Descendiente().m
 
   //Constructores
   class Persona(val n: String)
   class Empleado(n: String) extends Persona(n)
   class Empleado1 extends Persona("abc")
 
-  new Empleado("ggg").n                           //> res0: String = ggg
+  new Empleado("ggg").n
 
   //Clases finales
   final class A
