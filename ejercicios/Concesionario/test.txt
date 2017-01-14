@@ -1,0 +1,12 @@
+Hay 10 elementos
+Los datos son:
+Coche(true,SE75jdZuNd,413.0)
+Coche(true,cJfF4S0SOz,1616.0)
+Moto(false,rxl7eBQAvN,394.0)
+Coche(true,UybTWKpVGT,1060.0)
+Coche(true,DUFpjVJDdJ,1912.0)
+Moto(false,pAwFYpInk9,105.0)
+Moto(false,jU3Phty31w,1465.0)
+Moto(false,l0bYTlXrcA,1357.0)
+Moto(false,fWmXQTvTdg,1332.0)
+Coche(true,D4lqCujdFM,846.0)
