@@ -1,0 +1,5 @@
+Colocar java el el path:
+	set path=%path%;c:\jdk1.8.0_101\bin
+Teclear scalac objeto.scala
+Tecleat javap Test
+Observar los resultados
