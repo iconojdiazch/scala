@@ -4,7 +4,7 @@ object Principal extends App {
   List(enSecuencia)
     .map(tiempo(_))
     .foreach {
-      case (x, y) => println(s"Tiempo: $x. Palabras: $y")
+      case (x, y) => println(s"Tiempo: $x segundos. Palabras: $y")
     }
 
   def enSecuencia = {
@@ -19,6 +19,6 @@ object Principal extends App {
 
   def tiempo[T](bloque: => T) = {
     val inicio = System.nanoTime
-    (System.nanoTime - inicio, bloque)
+    ((System.nanoTime - inicio).toDouble / 1000000000.0, bloque)
   }
 }
