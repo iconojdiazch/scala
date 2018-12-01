@@ -11,7 +11,7 @@ echo name := "%1" > build1.sbt
 echo. >> build1.sbt
 echo version := "1.0" >> build1.sbt
 echo. >> build1.sbt
-echo scalaVersion := "2.12.1" >> build1.sbt
+echo scalaVersion := "2.12.7" >> build1.sbt
 echo. >> build1.sbt
 echo scalacOptions := Seq("-unchecked", "-deprecation", "-language:_","-target:jvm-1.8","-encoding", "UTF-8", "-Xcheckinit") >> build1.sbt
 echo. >> build1.sbt

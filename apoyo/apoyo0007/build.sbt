@@ -4,7 +4,7 @@ name := "apoyo0007"
 
 version := "0.1-SNAPSHOT"
 
-scalaVersion := "2.12.0"
+scalaVersion := "2.12.7"
 
 scalacOptions ++= List(
   "-unchecked",
